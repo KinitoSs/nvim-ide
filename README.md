@@ -6,6 +6,19 @@
 
 [nodejs binary](https://nodejs.org/en/download/)
 
+[lazygit](https://github.com/jesseduffield/lazygit/releases/tag/v0.36.0)
+
+```sh
+[Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Data\Neovim\ripgrep", [EnvironmentVariableTarget]::User)
+[Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Data\Neovim\node", [EnvironmentVariableTarget]::User)
+[Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Data\Neovim\lazygit", [EnvironmentVariableTarget]::User)
+```
+
+```sh
+pip install pynvim
+npm i -g neovim
+```
+
 ```sh
 pip install pynvim
 npm i -g neovim
