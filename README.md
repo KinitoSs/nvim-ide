@@ -1,3 +1,6 @@
+[Neovim](https://github.com/neovim/neovim/releases/tag/stable)
+[Source Code Pro Nerd Font]([https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/SourceCodePro.zip)
+
 # A Basic Stable IDE config for Neovim
 
 > Why does this repo exist?
