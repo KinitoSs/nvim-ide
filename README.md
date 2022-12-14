@@ -2,6 +2,15 @@
 
 [Source Code Pro Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/SourceCodePro.zip)
 
+[ripgrep](https://github.com/BurntSushi/ripgrep/releases)
+
+[nodejs binary](https://nodejs.org/en/download/)
+
+```sh
+pip install pynvim
+npm i -g neovim
+```
+
 # A Basic Stable IDE config for Neovim
 
 > Why does this repo exist?
