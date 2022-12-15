@@ -60,22 +60,11 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
   use { "powerman/vim-plugin-ruscmd" }
-
-  -- use {
-  --   "max397574/better-escape.nvim",
-  --   config = function()
-  --     require("better_escape").setup {
-  --       mapping = {"jk", "ол" }, -- a table with mappings to use
-  --       timeout = vim.o.timeoutlen, -- the time in which the keys must be hit in ms. Use option timeoutlen by default
-  --       clear_empty_lines = false, -- clear line after escaping if there is only whitespace
-  --       keys = "<Esc>", -- keys used for escaping, if it is a function will use the result everytime
-  --       -- example(recommended)
-  --       -- keys = function()
-  --       --   return vim.api.nvim_win_get_cursor(0)[2] > 1 and '<esc>l' or '<esc>'
-  --       -- end,
-  --     }
-  --   end,
-  -- }
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+  }
+  use { "sheodox/projectlaunch.nvim" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }

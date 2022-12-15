@@ -81,3 +81,26 @@ keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- Lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+
+
+-- Projectlaunch
+local status_ok, projectlaunch = pcall(require, "projectlaunch")
+if not status_ok then
+  return
+end
+-- open the main menu
+keymap('n', "<leader>ll", projectlaunch.toggle_main_menu, {noremap = true, expr = false, buffer = false})
+
+-- open the floating window terminal viewer
+keymap('n', "<leader>lf", projectlaunch.toggle_float, {noremap = true, expr = false, buffer = false})
+
+-- open the split window terminal viewer
+keymap('n', "<leader>ls", projectlaunch.toggle_split, {noremap = true, expr = false, buffer = false})
+
+-- show the next or previous terminals in the open viewer
+keymap('n', "<leader>ln", projectlaunch.show_next, {noremap = true, expr = false, buffer = false})
+keymap('n', "<leader>lm", projectlaunch.show_prev, {noremap = true, expr = false, buffer = false})
+
+-- restart the command running in the currently open split terminal
+keymap('n', "<leader>lr", projectlaunch.restart_command_in_split, {noremap = true, expr = false, buffer = false})
+
