@@ -65,6 +65,7 @@ return packer.startup(function(use)
     requires = "kyazdani42/nvim-web-devicons",
   }
   use { "sheodox/projectlaunch.nvim" }
+  use { "ahmedkhalf/jupyter-nvim" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
