@@ -43,3 +43,6 @@ vim.opt.linebreak = true
 -- vim.opt.rnu = true
 vim.opt.fdm = "indent"
 vim.opt.foldlevel = 99
+vim.opt.keymap = "russian-jcukenwin"
+vim.opt.iminsert = 0
+vim.opt.imsearch = 0
