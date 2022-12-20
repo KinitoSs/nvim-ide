@@ -104,3 +104,5 @@ keymap('n', "<leader>lm", projectlaunch.show_prev, {noremap = true, expr = false
 -- restart the command running in the currently open split terminal
 keymap('n', "<leader>lr", projectlaunch.restart_command_in_split, {noremap = true, expr = false, buffer = false})
 
+
+
